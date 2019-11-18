@@ -1,14 +1,17 @@
+require('dotenv').config();
+
 const express  = require('express');
 const mongoose = require('mongoose');
 const cors     = require('cors');
-const path     = require('path');;
+const path     = require('path');
+
 
 const routes   = require('./routes');
 
 
 const app = express();
 
-mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-3qoci.mongodb.net/semana09?retryWrites=true&w=majority', {
+mongoose.connect(process.env.STRING_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
