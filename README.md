@@ -5,7 +5,6 @@
 <p>The backend use NoSQL MongoDB database. The Node.js use dependencies (Express, mongoose, multer, dotenv and cors ) and developer dependencie (nodemon)</p>
 
 <h2>HOW TO USE</h2>
-<hr>
 
 <ul>
     <li>First 
